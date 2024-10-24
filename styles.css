@@ -1,0 +1,126 @@
+/* Estilo general */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #34495e;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.machine {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.money-buttons,
+.beer-buttons {
+  margin: 30px 0;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones de dinero */
+.money-btn {
+  background-color: #3498db;
+  margin: 10px;
+  width: 120px;
+}
+
+.money-btn:hover {
+  background-color: #2980b9;
+}
+
+.money-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Botones de cerveza */
+.btn-green {
+  background-color: #2ecc71;
+}
+
+.btn-green:hover {
+  background-color: #27ae60;
+}
+
+.btn-orange {
+  background-color: #e67e22;
+}
+
+.btn-orange:hover {
+  background-color: #d35400;
+}
+
+.beer-btn {
+  width: 180px;
+  margin: 10px;
+  padding: 15px 30px;
+}
+
+.beer-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Texto del total de dinero */
+#total {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Área de resultados */
+#resultados {
+  margin-top: 30px;
+}
+
+/* Texto de resultado de cerveza y cambio */
+#resultados p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 10px;
+  height: 30px;
+}

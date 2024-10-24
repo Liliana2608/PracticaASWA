@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Expendedora de Cervezas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Máquina Expendedora de Cervezas</h1>
+
+    <div class="machine">
+        <p id="total">Dinero total: $0</p>
+
+        <div class="money-buttons">
+            <h2>Introduce monedas</h2>
+            <button id="btn-1" class="money-btn" onclick="insertarMoneda(1)">Moneda de $1</button>
+            <button id="btn-2" class="money-btn" onclick="insertarMoneda(2)">Moneda de $2</button>
+            <button id="btn-5" class="money-btn" onclick="insertarMoneda(5)">Moneda de $5</button>
+        </div>
+
+        <div class="beer-buttons">
+            <h2>Selecciona el tipo de cerveza</h2>
+            <button id="btn-clara" class="btn-green beer-btn" onclick="seleccionarCerveza('clara')" disabled>Cerveza
+                Clara</button>
+            <button id="btn-obscura" class="btn-orange beer-btn" onclick="seleccionarCerveza('obscura')"
+                disabled>Cerveza Obscura</button>
+        </div>
+
+        <div id="resultados">
+            <p id="mensaje-cerveza"></p>
+            <p id="mensaje-cambio"></p>
+        </div>
+    </div>
+
+    <script src="vending.js"></script>
+</body>
+
+</html>
